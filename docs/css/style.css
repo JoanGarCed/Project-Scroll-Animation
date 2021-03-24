@@ -12,6 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1{
@@ -43,4 +44,21 @@ h1{
 
 .box h2{
     font-size: 45px;
+}
+
+@media(max-width: 500px){
+    .box{
+        background-color: steelblue;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 150px;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+        transform: translateX(200%);
+        transition: transform 0.4s ease;
+    }
 }
